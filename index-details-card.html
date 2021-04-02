@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <details>
+        <summary>Título del desplegable</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed vestibulum ante. Aliquam dolor mi, hendrerit ac augue tincidunt, tincidunt consectetur felis. Suspendisse ligula dui, laoreet ut finibus ac, egestas lacinia ipsum. Nunc sodales enim
+            sed nisl dapibus hendrerit. Pellentesque ac massa libero.</p>
+    </details>
+
+    <style>
+        details {
+            padding: 15px;
+            background-color: #f6f7f8;
+            border-radius: 6px;
+            width: 300px;
+            transition: height 0.5s ease;
+            overflow: hidden;
+            position: absolute;
+            z-index: 3;
+            font-size: 25px;
+            top: 500px;
+            left: 630px
+        }
+        
+        summary {
+            outline: none;
+            cursor: pointer;
+        }
+        
+        details[open] {
+            height: 360px;
+        }
+        
+        details:not([open]) {
+            height: 25px;
+        }
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1080px;
+          height: 1080px;
+          z-index: 3;
+        }
+        
+        body {
+            background: #101f59;
+            z-index: 0;
+        }
+    </style>
+</body>
+
+</html>
